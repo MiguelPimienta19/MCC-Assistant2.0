@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F6F1E8; /* warm parchment */
+  --foreground: #2B2118; /* deep brown */
+  --accent: #7C5E4D;    /* clay */
+  --accent-2: #A37C5B;  /* sand */
+  --accent-3: #3A5A40;  /* olive green */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Warmer dark theme to avoid black-on-black */
+    --background: #f2f2f2; /* cocoa */
+    --foreground: #bead2f; /* warm ivory */
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter, ui-sans-serif), system-ui, -apple-system, Segoe UI,
+    Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.display-serif {
+  font-family: var(--font-fraunces), ui-serif, Georgia, Cambria, "Times New Roman";
+}
